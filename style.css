@@ -5,6 +5,7 @@
 }
 body {
   height: 100dvh;
+  font-family: 'Public Sans', Arial;
 }
 header {
   display: grid;
@@ -16,10 +17,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-nav {
-  gap: 2em;
+.top-nav {
+  gap: 1em;
 }
-nav a {
+.top-nav a {
   text-decoration: none;
   color: hsl(233, 8%, 62%);
   width: 100%;
@@ -28,7 +29,7 @@ nav a {
   align-items: center;
   justify-content: center;
 }
-nav a:hover{
+.top-nav a:hover{
   color: hsl(233, 26%, 24%);
   border-bottom: 4px solid hsl(136, 64%, 51%);
 }
@@ -38,10 +39,46 @@ nav a:hover{
   justify-content: center;
 }
 .invite button {
-  width: 35%;
-  height: 58%;
+  width: 120px;
+  height: 39.5px;
   border: none;
   border-radius: 20px;
   background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
   color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.invite button:hover {
+  opacity: 0.6;
+}
+main {
+  display: grid;
+}
+.next-gen, .why-choose, .latest {
+  display: grid;
+}
+footer {
+  padding: 2em 0;
+  background-color: hsl(233, 26%, 24%);
+  display: grid;
+  grid-template-columns: 3fr 3fr 4fr;
+}
+.ftlinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.ftlinks a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.ftinvite {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+.ftinvite .invite button:hover {
+  background: linear-gradient(to bottom, hsla(136, 64%, 51%, 0.76), hsla(192, 69%, 51%, 0.849));
+  opacity: 0.9;
 }
