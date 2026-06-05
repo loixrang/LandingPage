@@ -9,8 +9,12 @@ body {
 }
 header {
   display: grid;
-  height: 9%;
+  height: 10dvh;
   grid-template-columns: repeat(3, 1fr);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
 }
 .logo, nav, .invite {
   display: flex;
@@ -28,10 +32,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
 }
 .top-nav a:hover{
   color: hsl(233, 26%, 24%);
   border-bottom: 4px solid hsl(136, 64%, 51%);
+}
+p {
+  color: hsl(233, 8%, 62%);
 }
 .invite {
   display: flex;
@@ -46,12 +54,13 @@ header {
   background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
   color: white;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
 }
 .invite button:hover {
   opacity: 0.6;
 }
 main {
+  margin-top: 10dvh;
   display: grid;
 }
 .next-gen, .why-choose, .latest {
@@ -102,4 +111,28 @@ footer {
 .ftinvite .invite button:hover {
   background: linear-gradient(to bottom, hsla(136, 64%, 51%, 0.76), hsla(192, 69%, 51%, 0.849));
   opacity: 0.9;
+}
+.why-choose {
+  background-color: hsl(220, 16%, 96%);
+  display: grid;
+  gap: 3em;
+  padding: 4em 10em;
+}
+.why {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+.features div {
+  display: grid;
+  gap: 2em;
 }
