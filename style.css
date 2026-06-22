@@ -151,7 +151,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4em 10em;
+  flex-wrap: wrap;
+  padding: 4em 0;
+}
+.latest-div, .choose-div {
+  width: 80%;
 }
 .latest {
   background-color: hsl(0, 0%, 98%);
@@ -169,7 +173,7 @@ footer {
 .art-3,
 .art-4 {
   display: flex;
-  height: 60vh;
+  height: 85vh;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
 }
